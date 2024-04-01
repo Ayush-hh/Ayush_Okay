@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        h3 {text-align: center;}
+        p {text-align: center;}
+        .section {display: none;}
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+   <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0fc; /* Pastel pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4169e1; /* Royal blue header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #000; /* Black headings */
+}
+
+p {
+    color: #555;
+}
+
+.section {
+    display: none;
+    padding: 20px;
+    margin: 20px auto; /* Center align sections */
+    max-width: 600px; /* Limit section width */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4169e1; /* Royal blue button */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #21409a; /* Darker royal blue on hover */
+}
+
+.next-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-button button {
+    background-color: #ffb6c1; /* Pastel pink next button */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-button button:hover {
+    background-color: #ff69b4; /* Darker pastel pink on hover */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introduction</h1>
+    </header>
+    <button onclick="showSection('intro')">Intro</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('interests')">Interests</button>
+    <button onclick="showSection('js')">JavaScript - Browser Object Model</button>
+    <main>
+        <section id="intro" class="section">
+            <h2>Introduction</h2>
+            <p>Greetings! I'm Ayush Sharma, and I'm a fourth-semester student at the University of Petroleum and Energy Studies (UPES), 
+                where I'm studying computer science and engineering (CSE) for a Bachelor of Technology (B.Tech) degree. 
+                I have opted to specialise in Cloud Computing and Virtualization Technology (CCVT) within the field of Computer Science. 
+                I'm passionate about the dynamic connection of innovation and technology, and I'm committed to improving my knowledge and abilities in this quickly developing field. 
+                Eager to make significant contributions to the field of technology and dedicated to achieving high academic standards, 
+                I am enthusiastic about the opportunities that await me in both my academic and professional endeavours.</p>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p>I'm proficient with AWS, Azure, and Google Cloud. I'm also skilled in Python, Java, and C++. 
+                I'm an expert at network troubleshooting and SQL database management using VMware and VirtualBox virtualization platforms. 
+                With my familiarity with Windows, Linux, and macOS, I can communicate clearly in group projects.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Currently working on a project in the field of Antibiotic spread in the environment under the FLAT subject,
+                and developing a website for the problem statement in the traveling field and then merging it into a cloud server.
+            </p>
+        </section>
+        <section id="interests" class="section">
+            <h2>Interests</h2>
+            <p>I have interests in Sports, Coding, Book Reading, Poetries</p>
+        </section>
+        <section id="js" class="section">
+            <h1>Java Script - Browser Object Model</h1>
+            <h3>Title: Comprehending the JavaScript Browser Model: Enabling Adaptive Online Environments</h3>
+            <p>
+                JavaScript is a key language in web development that facilitates dynamic and interactive experiences. Its interaction with the browser, which forms the basis of the JavaScript browser model, is essential to its functionality. In order to create interesting web applications, we explore the workings of this model in detail in this article. Specifically, we look at how JavaScript interacts with the browser environment.
+                Fundamentally, the JavaScript browser model consists of a collection of browser-provided APIs (Application Programming Interfaces) that allow JavaScript code to communicate with different web page elements. These APIs give developers the ability to manage user interactions, modify the Document Object Model (DOM), and dynamically control browser behavior.
+                The way the JavaScript browser model interacts with the DOM is one of its core features. A web page's structure is represented by the Document Object Model (DOM) as a hierarchical tree of objects, with JavaScript providing access to every element, attribute, and text node. Developers can respond to user actions or application logic by dynamically updating the content, style, and structure of web pages through DOM manipulation. Because of this, interactive features like drop-down menus, form validation, and real-time updates can be created without requiring page reloads.
+                Additionally, JavaScript uses event handling to communicate with the browser. JavaScript functions are triggered by events, like keystrokes, clicks, and page loads, which enable developers to efficiently react to user actions. Interactive and responsive web applications can be created by developers by adding event listeners to DOM elements, which allows them to run custom code at specified times.
+                APIs for managing browser windows and frames, handling events in the browser, and modifying the browser history are also included in the JavaScript browser model. With the help of these APIs, developers can implement client-side routing, control browser behavior programmatically, and create seamless navigation experiences.
+                Furthermore, Web APIs and other sophisticated features are supported by contemporary browsers, expanding JavaScript's potential beyond conventional web development. Web APIs provide access to geolocation data, device hardware,
+                With the evolution of web development, the JavaScript browser model also changes. Developers can now use the most recent browser APIs and language features to create reliable, cross-platform web applications thanks to the introduction of ECMAScript standards and browser compatibility initiatives. Furthermore, new developments in web technologies like WebAssembly and Progressive Web Apps (PWAs) increase the potential for JavaScript-powered online experiences.
+                To sum up, the foundation of contemporary web development is the JavaScript browser model, which empowers programmers to create dynamic, interactive, and captivating web applications. Through the utilization of JavaScript's capabilities and its interplay with the browser environment, developers can produce intricate and smooth user experiences that stimulate creativity on the internet.
+            </p>
+        </section>
+    </main>
+    <div class="next-button">
+        <a href="Assignment_1_quiz.html"><button>Take Quiz</button></a>
+    </div>
+</body>
+</html>
